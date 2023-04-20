@@ -1,3 +1,5 @@
+using Assessment4_Solution;
+
 namespace Assessment4_Solution
 {
     public class WeatherForecast
