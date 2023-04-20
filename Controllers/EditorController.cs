@@ -51,6 +51,7 @@ namespace Assessment4_Solution.Controllers
         [HttpPost("add")]
         public string AddEditor([FromBody] AddParams editor)
         {
+
             string query = "INSERT INTO document VALUES (@Title, @Description)";
             sqlConnection.Open();
 
@@ -63,7 +64,7 @@ namespace Assessment4_Solution.Controllers
 
             sqlConnection.Close();
 
-            return "Created Successfully!";
+            return "Added Successfully!";
         }
 
         [HttpPost("update")]
@@ -99,6 +100,7 @@ namespace Assessment4_Solution.Controllers
             sqlConnection.Close();
 
             return "Deleted Successfully!";
+
         }
 
     }
